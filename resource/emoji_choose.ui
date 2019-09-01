@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>261</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Choose Emoji</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+	font: 14pt &quot;Arial&quot;;
+}
+QPushButton:hover{
+	
+	background-color: rgb(199, 199, 199);
+}
+QPushButton:pressed{
+	
+	background-color: rgb(139, 139, 139);
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>482</width>
+     <height>226</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="2">
+     <widget class="QPushButton" name="p9">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😄</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="p11">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😀</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="p10">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😡</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="p13">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>🙃</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="p3">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😍</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="p7">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😜</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="p5">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😁</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="p1">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>😂</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="p2">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😘</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="p4">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😊</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QPushButton" name="p6">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😭</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QPushButton" name="p12">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😥</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="p14">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😋</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="p20">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😨</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="p15">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>👍</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="p21">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>🤪</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="p16">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>👌</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="p22">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😒</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="p17">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>❤</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QPushButton" name="p18">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😱</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QPushButton" name="p23">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😫</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QPushButton" name="p24">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>🙂</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="p19">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>🐷</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="p8">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>😝</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">emoji_group</string>
+      </attribute>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="emoji_group"/>
+ </buttongroups>
+</ui>

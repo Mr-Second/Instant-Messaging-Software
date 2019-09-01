@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Register</class>
+ <widget class="QDialog" name="Register">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Register</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 255, 255);
+</string>
+  </property>
+  <widget class="QLabel" name="top_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>320</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 255, 255);
+border-image: url(:/Prefix/register.png);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="register_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>350</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius:8px;
+	font: 18pt &quot;宋体&quot;;
+	background-color: rgb(54, 136, 255);
+}
+QPushButton::hover{  
+  	font: 18pt &quot;宋体&quot;;
+	background-color: rgb(48, 124, 235);
+}  
+QPushButton::pressed{  
+	font: 18pt &quot;宋体&quot;;
+	background-color: rgb(39, 101, 188);
+} </string>
+   </property>
+   <property name="text">
+    <string>立即注册</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>233</width>
+     <height>143</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QLineEdit" name="username_input">
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>41</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Calibri&quot;;
+border-radius:8px;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>昵称</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="password_input">
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>41</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Calibri&quot;;
+border-radius:8px;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>密码</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="confirm_psd_input">
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>41</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Calibri&quot;;
+border-radius:8px;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>确认密码</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

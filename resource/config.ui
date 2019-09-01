@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>355</width>
+    <height>238</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>配置</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>44</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(60,78,173);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>311</x>
+     <y>41</y>
+     <width>44</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(60,78,173);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ipInput">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>114</y>
+     <width>178</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px groove rgb(209,209,209);
+border-radius:10px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 11pt &quot;Microsoft New Tai Lue&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>服务器IP地址</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="portInput">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>147</y>
+     <width>178</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px groove rgb(209,209,209);
+border-radius:10px;
+padding:2px 4px;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 11pt &quot;Microsoft New Tai Lue&quot;;</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>服务器端口号</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="config_btn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>190</y>
+     <width>171</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(47, 156, 195);
+	border-radius:5px;
+	border:none;
+}
+QPushButton:hover{
+	background-color: rgb(55, 191, 232);
+	border-radius:5px;
+	border:none;
+}
+QPushButton:pressed{
+	background-color: rgb(61, 207, 255);
+	border-radius:5px;
+	border:none;
+}</string>
+   </property>
+   <property name="text">
+    <string>配置</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>0</y>
+     <width>267</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(60,78,173);
+font: 75 24pt &quot;Microsoft PhagsPa&quot;;
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Config</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_btn">
+   <property name="geometry">
+    <rect>
+     <x>311</x>
+     <y>0</y>
+     <width>44</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-image: url(:/Prefix/myClose.png);
+	background-color: rgb(60,78,173);
+}
+QPushButton:hover{
+	border-image: url(:/Prefix/myClose.png);
+	background-color: rgb(255, 0, 0);
+	
+}
+QPushButton:pressed{
+	border-image: url(:/Prefix/myClose.png);
+	
+	background-color: rgb(118, 0, 0);
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>close_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_button_close_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ipInput</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>auto_enable_config_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>33</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>portInput</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>auto_enable_config_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>118</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>35</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_button_close_clicked()</slot>
+  <slot>auto_enable_config_btn()</slot>
+ </slots>
+</ui>

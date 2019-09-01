@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="Prefix">
+    <file>emoji.png</file>
+    <file>chat.png</file>
+    <file>head1.png</file>
+    <file>head2.png</file>
+    <file>friendlist.png</file>
+    <file>avatar.png</file>
+    <file>register.png</file>
+    <file>middle.png</file>
+    <file>titleIco.ico</file>
+    <file>myClose.png</file>
+  </qresource>
+</RCC>
