@@ -1,2 +1,11 @@
 # Instant-Messaging-Software
-Instant-Messaging-Software
+#### 客户端包括登录、注册、与特定的人聊天以及群聊广播等功能，服务器端包括对客户端数据的解析和做出相应的操作
+
+***
+#### UI界面
+UI界面使用Qt designer 完成
+***
+### 测试
+将服务器端放在云服务器上可实现多人多机聊天
+***
+具体细节可在IM.xmind查看
